@@ -1,3 +1,4 @@
+/* Estilos gerais */
 .title {
   font-size: 20px;
   font-weight: 700;
@@ -60,4 +61,83 @@
 
 .daily-details-grid-item label:last-child {
   color: #212121;
+}
+
+/* Media queries para responsividade */
+
+/* Para telas pequenas (móveis) */
+@media (max-width: 600px) {
+  .title {
+    font-size: 18px;
+  }
+
+  .daily-item {
+    font-size: 12px;
+    padding: 5px 10px;
+    height: auto;
+  }
+
+  .icon-small {
+    width: 30px;
+  }
+
+  .day {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  .description {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+
+  .daily-details-grid {
+    grid-template-columns: 1fr;
+    padding: 5px 10px;
+  }
+
+  .daily-details-grid-item {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .daily-details-grid-item label:first-child,
+  .daily-details-grid-item label:last-child {
+    font-size: 12px;
+  }
+}
+
+/* Para telas médias (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .title {
+    font-size: 19px;
+  }
+
+  .daily-item {
+    font-size: 13px;
+    padding: 5px 15px;
+  }
+
+  .icon-small {
+    width: 35px;
+  }
+
+  .day {
+    font-size: 15px;
+    margin-left: 12px;
+  }
+
+  .description {
+    font-size: 13px;
+    margin-right: 12px;
+  }
+
+  .daily-details-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .daily-details-grid-item {
+    height: auto;
+  }
 }
