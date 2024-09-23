@@ -56,11 +56,11 @@
 }
 
 .daily-details-grid-item label:first-child {
-  color: #757575;
+  color: #333333;
 }
 
 .daily-details-grid-item label:last-child {
-  color: #212121;
+  color: #000000;
 }
 
 /* Media queries para responsividade */
